@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4yT-lM-6SU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Acronyms Result View Controller-->
+        <scene sceneID="TlJ-ic-qVZ">
+            <objects>
+                <viewController id="4yT-lM-6SU" customClass="AcronymsResultViewController" customModule="AcroNisum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FK2-D5-pDm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1N4-2Y-9Z0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="epb-E4-7qU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NPz-8s-ohG">
+                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A9q-IC-wbK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A9q-IC-wbK" firstAttribute="bottom" secondItem="NPz-8s-ohG" secondAttribute="bottom" id="6Er-T8-ham"/>
+                            <constraint firstItem="1N4-2Y-9Z0" firstAttribute="top" secondItem="A9q-IC-wbK" secondAttribute="top" id="I7b-Lp-O2k"/>
+                            <constraint firstItem="1N4-2Y-9Z0" firstAttribute="leading" secondItem="A9q-IC-wbK" secondAttribute="leading" id="Oz1-R7-gU1"/>
+                            <constraint firstItem="A9q-IC-wbK" firstAttribute="trailing" secondItem="1N4-2Y-9Z0" secondAttribute="trailing" id="Qwc-9e-cCY"/>
+                            <constraint firstItem="NPz-8s-ohG" firstAttribute="top" secondItem="1N4-2Y-9Z0" secondAttribute="bottom" id="Xkg-7f-74E"/>
+                            <constraint firstItem="NPz-8s-ohG" firstAttribute="leading" secondItem="A9q-IC-wbK" secondAttribute="leading" id="uSM-k5-PhD"/>
+                            <constraint firstItem="A9q-IC-wbK" firstAttribute="trailing" secondItem="NPz-8s-ohG" secondAttribute="trailing" id="x8e-10-Mej"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="NPz-8s-ohG" id="Vhp-kF-FZo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1SQ-5V-Yx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
